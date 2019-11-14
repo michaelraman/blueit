@@ -1,13 +1,12 @@
 var config = {
-    // apiKey: "AIzaSyCHhX5PmpsmLQhY95HmLnm2VYc0m81mos0",
-    // authDomain: "tyes-web-478b4.firebaseapp.com",
-    // databaseURL: "https://tyes-web-478b4.firebaseio.com", //REPLACE
-    // projectId: "tyes-web-478b4",
-    // storageBucket: "tyes-web-478b4.appspot.com",
-    // messagingSenderId: "496916704132",
-    // appId: "1:496916704132:web:c313edfb1c7b1a41a40bd1"
-
-    // mithil: update w config
+    apiKey: "AIzaSyDQ7FMpVsxFPQrIVAb-pR4Fq7AEEWqNUag",
+    authDomain: "redditforum-9aaad.firebaseapp.com",
+    databaseURL: "https://redditforum-9aaad.firebaseio.com",
+    projectId: "redditforum-9aaad",
+    storageBucket: "redditforum-9aaad.appspot.com",
+    messagingSenderId: "889538924197",
+    appId: "1:889538924197:web:1734e4b342b7967cd4c74c",
+    measurementId: "G-NE9BL2EC80"
 };
 // Initialize Firebase
 firebase.initializeApp(config);
