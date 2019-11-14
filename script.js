@@ -4,9 +4,9 @@ function addItem(){
     var li = document.createElement("li");
     addTopic(topic.value);
     li.setAttribute('id',topic.value);
-    li.innerHTML = '<a href=\"messages.html?topic=' + topic.value + '\">topic.value</a>'  // '<a href="#hOME">HTML</a>'
+    li.innerHTML = '<a href=\"messages.html?topic=' + topic.value + '\">' + topic.value + '</a>'  // '<a href="#hOME">HTML</a>'
     li.setAttribute('href', topic.value + ".html")
-    li.appendChild(document.createTextNode(topic.value));
+    //li.appendChild(document.createTextNode(topic.value));
     ul.appendChild(li);
 }
 

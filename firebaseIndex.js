@@ -1,4 +1,4 @@
-var firebaseConfig = {
+var config = {
 // Your web app's Firebase configuration
     apiKey: "AIzaSyDQ7FMpVsxFPQrIVAb-pR4Fq7AEEWqNUag",
     authDomain: "redditforum-9aaad.firebaseapp.com",
@@ -10,5 +10,31 @@ var firebaseConfig = {
     measurementId: "G-NE9BL2EC80"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config)
+var database = firebase.database();
+
+firebase.auth.Auth.Persistance.LOCAL;
+
+
+$("#btn-login").click(function()
+{
+    var email = $("#email").val()
+    var password = $("#password").val()
+
+    if(email != "" && password != ""){
+        var result = firebase.auth().signInWithEmailAndPassword(email , password);
+        result.catch(function(error){
+            var errorCode = error.code();
+            var errorMessage = error.message;
+
+            console.log(errorCode);
+            window.alert("Message: " + errorMessage);
+        })
+
+
+    }
+    else{
+        window.alert("Form is incomplete. Please complete all required fields.")
+    }
+});
 
