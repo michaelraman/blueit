@@ -1,7 +1,8 @@
 function addItem(){
     var ul = document.getElementById("dynamic-list");
-    var candidate = document.getElementById("topic");
+    var topic = document.getElementById("topic");
     var li = document.createElement("li");
+    addTopic(topic.value);
     li.setAttribute('id',topic.value);
     li.innerHTML = '<a href=\"messages.html?topic=' + topic.value + '\">topic.value</a>'  // '<a href="#hOME">HTML</a>'
     li.setAttribute('href', topic.value + ".html")
