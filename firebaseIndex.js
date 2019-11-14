@@ -1,4 +1,5 @@
-var config = {
+var firebaseConfig = {
+// Your web app's Firebase configuration
     apiKey: "AIzaSyDQ7FMpVsxFPQrIVAb-pR4Fq7AEEWqNUag",
     authDomain: "redditforum-9aaad.firebaseapp.com",
     databaseURL: "https://redditforum-9aaad.firebaseio.com",
@@ -9,5 +10,5 @@ var config = {
     measurementId: "G-NE9BL2EC80"
 };
 // Initialize Firebase
-firebase.initializeApp(config);
-var db = firebase.database();
+firebase.initializeApp(firebaseConfig);
+
