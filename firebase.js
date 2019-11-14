@@ -30,6 +30,9 @@ function getTopics() {
 function addToList() {
   console.log(data);
   for(var i in data) {
-    addItem(i);
+    console.log(i);
+    if(i !== 'Content') {
+      createItem(i);
+    }
   }
 }
